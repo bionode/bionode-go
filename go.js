@@ -1,9 +1,12 @@
 var GOforGene = require('./go_gene_annotation.js')
 
-GOforGene("FBgn0262139","FB", function (err, list) {
-  if (err) return console.error('Something went wrong here: ', err)
+GOforGene.write({
+  geneID: 'FBgn0262139',
+  dbName: 'FB'
+})
 
-  list.forEach(function (annotation) {
-	console.log(annotation)
-  })
+GOforGene
+.on('data', console.log)
+.on('error', function (err) {
+  return console.error('Something went wrong here: ', err)
 })
