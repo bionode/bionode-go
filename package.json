@@ -1,0 +1,31 @@
+{
+  "name": "bionode-go",
+  "version": "1.0.0",
+  "description": "Bionode module for Gene Ontology",
+  "main": "go.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bionode/bionode-go.git"
+  },
+  "keywords": [
+    "bio",
+    "bioinformatics",
+    "biology",
+    "bionode",
+    "gene",
+    "ontology"
+  ],
+  "author": "Boris Adryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bionode/bionode-go/issues"
+  },
+  "homepage": "https://github.com/bionode/bionode-go",
+  "dependencies": {
+    "mysql": "^2.5.4",
+    "through2": "^0.6.3"
+  }
+}
